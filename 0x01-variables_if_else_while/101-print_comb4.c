@@ -24,6 +24,8 @@ int main(void)
 				putchar('0' + n);
 				putchar('0' + m);
 				putchar('0' + o);
+				if (n == 7)
+					break;
 				putchar(',');
 				putchar(' ');
 				++o;
