@@ -24,12 +24,7 @@ int main(void)
 				y = 0;
 				while (y <= 9)
 				{
-					if (n > x)
-					{
-						++y;
-						continue;
-					}
-					if(n == x && m >= y)
+					if (n > x || (n == x && m >= y))
 					{
 						++y;
 						continue;
