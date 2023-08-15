@@ -1,6 +1,4 @@
-#include <stdlib.h>
-#include <time.h>
-#include <stdio.h>
+#include "main.h"
 
 /**
  * main - Entry point
@@ -11,6 +9,14 @@
 */
 int main(void)
 {
-	puts("_putchar\n");
+	int i = 0;
+	char output[] = "_putchar";
+
+	while (i < 8)
+	{
+		_putchar(output[i]);
+		++i;
+	}
+	_putchar('\n');
 	return (0);
 }
