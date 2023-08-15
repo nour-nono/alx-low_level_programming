@@ -9,9 +9,6 @@
 */
 int main(void)
 {
-	int i = 0;
-	char output[] = "_putchar";
-
 	for (char i='a'; i<= 'z'; ++i)
 	{
 		_putchar(i);
