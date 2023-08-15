@@ -9,13 +9,6 @@
 */
 int main(void)
 {
-	char i = 'a';
-
-	for (; i <= 'z'; ++i)
-	{
-		_putchar(i);
-		++i;
-	}
-	_putchar('\n');
+	print_alphabet();
 	return (0);
 }
