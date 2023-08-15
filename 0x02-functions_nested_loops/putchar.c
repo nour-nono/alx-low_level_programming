@@ -1,5 +1,5 @@
 #include "main.h"
-#include <unistd.h>
+#include <stdio.h>
 
 /**
  * _putchar - Prints character
@@ -11,7 +11,7 @@
  * Return: 1 on (Success)
  * and return -1 on error
 */
-int _putchar(char c)
+char _putchar(char c)
 {
-	return (write(1, &c, 1));
+	return (putchar(c));
 }

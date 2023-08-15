@@ -1,23 +1,22 @@
-#include <stdlib.h>
-#include <time.h>
-#include <stdio.h>
+#include "main.h"
 
 /**
  * main - Entry point
  *
- * Description: this program prints the alphabet in lowercase
+ * Description: this program prints "_putchar"
  *
  * Return: Always 0 (Success)
 */
 int main(void)
 {
-	char n = 'a';
+	int i = 0;
+	char output[] = "_putchar";
 
-	while (n <= 'z')
+	for (char i='a'; i<= 'z'; ++i)
 	{
-		putchar(n);
-		++n;
+		_putchar(i);
+		++i;
 	}
-	putchar('\n');
+	_putchar('\n');
 	return (0);
 }
