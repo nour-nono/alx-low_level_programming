@@ -1,23 +1,28 @@
-#include <stdlib.h>
-#include <time.h>
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Entry point
+ * print_sign - Entry point
  *
- * Description: this program prints the alphabet in lowercase
+ * @n: is a num
+ *
+ * Description: this program prints "_putchar"
  *
  * Return: Always 0 (Success)
 */
-int main(void)
+int print_sign(int n)
 {
-	char n = 'a';
-
-	while (n <= 'z')
+	if (n > 0)
 	{
-		putchar(n);
-		++n;
+		_putchar('+');
+		return (1);
+	else if (n == 0)
+	{
+		_putchar(0);
+		return (0);
 	}
-	putchar('\n');
-	return (0);
+	else
+	{
+		_putchar('-');
+		return (-1);
 }
+
