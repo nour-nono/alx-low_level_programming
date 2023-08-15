@@ -1,23 +1,19 @@
-#include <stdlib.h>
-#include <time.h>
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Entry point
+ * _isalpha - Entry point
  *
- * Description: this program prints the alphabet in lowercase
+ * @c: is a num
+ *
+ * Description: this program prints "_putchar"
  *
  * Return: Always 0 (Success)
 */
-int main(void)
+int _islower(int c)
 {
-	char n = 'a';
-
-	while (n <= 'z')
-	{
-		putchar(n);
-		++n;
-	}
-	putchar('\n');
-	return (0);
+	if ((c >= 97 && c <= 122) || (c >= 65 && c <= 90))
+		return (1);
+	else
+		return (0);
 }
+
