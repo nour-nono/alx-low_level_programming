@@ -1,23 +1,23 @@
-#include <stdlib.h>
-#include <time.h>
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Entry point
+ * _abs - Entry point
  *
- * Description: this program prints the alphabet in lowercase
+ * @n: is a num
+ *
+ * Description: this program prints "_putchar"
  *
  * Return: Always 0 (Success)
 */
-int main(void)
+int _abs(int n)
 {
-	char n = 'a';
-
-	while (n <= 'z')
+	if (n > 0)
 	{
-		putchar(n);
-		++n;
+		return (n);
 	}
-	putchar('\n');
-	return (0);
+	else
+	{
+		return (-n);
+	}
 }
+
