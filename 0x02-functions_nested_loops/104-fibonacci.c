@@ -17,6 +17,6 @@ int main(void)
 		j += i;
 		i = tmp;
 	}
-	printf("%ul\n", j);
+	printf("%lu\n", j);
 	return (0);
 }
