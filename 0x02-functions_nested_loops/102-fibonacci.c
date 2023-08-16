@@ -12,7 +12,7 @@ int main(void)
 	long int tmp = 0, i = 1, j = 2, n = 0;
 
 	printf("%ld, %ld, ", i, j);
-	for (; n < 50; ++n)
+	for (; n < 47; ++n)
 	{
 		tmp = j;
 		j += i;
