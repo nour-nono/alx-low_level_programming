@@ -11,12 +11,15 @@ int main(void)
 {
 	unsigned long int tmp = 0, i = 1, j = 2, n = 0;
 
-	for (; n < 96; ++n)
+	printf("%lu, %lu, ", i, j);
+	for (; n < 95; ++n)
 	{
 		tmp = j;
 		j += i;
 		i = tmp;
+		printf("%lu, ", j);
 	}
+	j += i;
 	printf("%lu\n", j);
 	return (0);
 }
