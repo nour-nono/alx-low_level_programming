@@ -11,10 +11,10 @@ void times_table(void)
 {
 	int hour = 0, min = 1;
 
-	for (; hour < 10; ++hour)
+	for (; hour < 10; hour++)
 	{
 		_putchar('0');
-		for (; min < 10; ++min)
+		for (; min < 10; min++)
 		{
 			int z = hour * min;
 
