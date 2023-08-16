@@ -16,6 +16,7 @@ int main(void)
 		if ((i % 15) == 0)
 			continue;
 		sum += i;
+	}
 	for (; j < 1024; j += 3)
 		sum += j;
 	printf("%d\n", sum);
