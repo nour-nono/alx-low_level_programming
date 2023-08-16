@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_last_digit - Entry point
+ * print_to_98 - Entry point
  *
  * @n: is a num
  *
@@ -9,14 +9,23 @@
  *
  * Return: Always 0 (Success)
 */
-int print_last_digit(int n)
+void print_to_98(int n)
 {
-	int z;
+	int cnt = n;
 
-	z = n % 10;
-	if (z < 0)
-		z = -1 * z;
-	_putchar('0' + z);
-	return (z);
+	if (n > 98)
+	{
+		for (; cnt >= 98; --cnt)
+		{
+			printf("%d, ", cnt);
+		}
+	}
+	else
+	{
+		for (; cnt <= 98; ++cnt)
+		{
+			printf("%d, ", cnt);
+		}
+	}
 }
 
