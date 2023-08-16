@@ -15,17 +15,18 @@ void print_to_98(int n)
 
 	if (n > 98)
 	{
-		for (; cnt >= 98; --cnt)
+		for (; cnt > 98; --cnt)
 		{
 			printf("%d, ", cnt);
 		}
 	}
 	else
 	{
-		for (; cnt <= 98; ++cnt)
+		for (; cnt < 98; ++cnt)
 		{
 			printf("%d, ", cnt);
 		}
+		printf("98");
 	}
 }
 
