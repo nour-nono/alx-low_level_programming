@@ -19,6 +19,7 @@ int main(void)
 		i = tmp;
 		printf("%ld, ", j);
 	}
+	j += i;
 	printf("%ld\n", j);
 	return (0);
 }
