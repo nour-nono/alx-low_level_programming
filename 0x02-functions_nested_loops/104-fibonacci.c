@@ -12,7 +12,7 @@ int main(void)
 	unsigned long int tmp = 0, i = 1, j = 2, n = 0;
 
 	printf("%lu, %lu, ", i, j);
-	for (; n < 97; ++n)
+	for (; n < 96; ++n)
 	{
 		tmp = j;
 		j += i;
