@@ -9,16 +9,16 @@
 */
 int main(void)
 {
-	long long int tmp = 0, i = 1, j = 2, n = 0;
+	long int tmp = 0, i = 1, j = 2, n = 0;
 
-	printf("%lld, %lld, ", i, j);
+	printf("%ld, %ld, ", i, j);
 	for (; n < 50; ++n)
 	{
 		tmp = j;
 		j += i;
 		i = tmp;
-		printf("%lld, ", j);
+		printf("%ld, ", j);
 	}
-	printf("%lld\n", j);
+	printf("%ld\n", j);
 	return (0);
 }
