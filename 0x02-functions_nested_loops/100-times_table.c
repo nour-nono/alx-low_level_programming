@@ -24,6 +24,8 @@ void print_times_table(int n)
 
 				_putchar(',');
 				_putchar(' ');
+				_putchar(' ');
+				_putchar(' ');
 				if (z >= 10)
 					_putchar('0' + (z / 10));
 				else
