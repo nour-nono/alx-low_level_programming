@@ -1,22 +1,33 @@
 #include "main.h"
 
 /**
- * print_last_digit - Entry point
- *
- * @n: is a num
+ * times_table - Entry point
  *
  * Description: this program prints "_putchar"
  *
  * Return: Always 0 (Success)
 */
-int print_last_digit(int n)
+void times_table(void)
 {
-	int z;
+	int hour = 0, min = 1;
 
-	z = n % 10;
-	if (z < 0)
-		z = -1 * z;
-	_putchar('0' + z);
-	return (z);
+	for (; hour < 10; ++hour)
+	{
+		_putchar('0');
+		for (; min < 10; ++min)
+		{
+			int z = hour * min;
+
+			_putchar(',');
+			_putchar(' ');
+			if (z > 10)
+				_putchar('0' + z / 10);
+			else
+				_putchar(' ');
+			_putchar('0' + min % 10);
+		}
+		_putchar('\n');
+		min = 1;
+	}
 }
 
