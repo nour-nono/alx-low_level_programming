@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+/**
+ * main - Entry point
+ *
+ * Description: this program prints the alphabet in lowercase
+ *
+ * Return: Always 0 (Success)
+*/
+int main(void)
+{
+	unsigned long int tmp = 0, i = 1, j = 2, n = 0;
+
+	for (; n < 96; ++n)
+	{
+		tmp = j;
+		j += i;
+		i = tmp;
+	}
+	printf("%ul\n", j);
+	return (0);
+}
