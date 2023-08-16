@@ -15,10 +15,10 @@ void print_times_table(int n)
 	{
 		int hour = 0, min = 1;
 
-		for (; hour < 10; ++hour)
+		for (; hour <= n; ++hour)
 		{
 			_putchar('0');
-			for (; min < 10; ++min)
+			for (; min <= n; ++min)
 			{
 				int z = hour * min;
 
