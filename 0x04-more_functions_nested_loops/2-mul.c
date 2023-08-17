@@ -3,9 +3,9 @@
 /**
  * mul - Entry point
  *
- * @n: is a num
+ * @a: is a num
  *
- * @m: is a num
+ * @b: is a num
  *
  * Description: this program prints "_putchar"
  *
