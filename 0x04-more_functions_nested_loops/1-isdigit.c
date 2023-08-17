@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _isalpha - Entry point
+ * _isdigit - Entry point
  *
  * @c: is a num
  *
@@ -9,9 +9,9 @@
  *
  * Return: Always 0 (Success)
 */
-int _isalpha(int c)
+int _isdigit(int c)
 {
-	if ((c >= 97 && c <= 122) || (c >= 65 && c <= 90))
+	if (c >= '0' && c <= '9')
 		return (1);
 	else
 		return (0);
