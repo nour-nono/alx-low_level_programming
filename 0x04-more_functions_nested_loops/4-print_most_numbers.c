@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * print_numbers - Entry point
+ * print_most_numbers - Entry point
  *
  * Description: this program prints "_putchar"
  *
  * Return: Always 0 (Success)
 */
-void print_numbers(void)
+void print_most_numbers(void)
 {
 	char i = '0';
 
