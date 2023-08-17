@@ -1,23 +1,19 @@
 #include "main.h"
 
 /**
- * _abs - Entry point
+ * _isupper - Entry point
  *
- * @n: is a num
+ * @c: is a num
  *
  * Description: this program prints "_putchar"
  *
  * Return: Always 0 (Success)
 */
-int _abs(int n)
+int _isupper(int c)
 {
-	if (n > 0)
-	{
-		return (n);
-	}
+	if (c >= 65 && c <= 90)
+		return (1);
 	else
-	{
-		return (-n);
-	}
+		return (0);
 }
 
