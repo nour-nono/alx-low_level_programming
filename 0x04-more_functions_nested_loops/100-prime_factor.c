@@ -15,6 +15,7 @@ int isprime(long int n)
 	else if (n == 1 || n % 2 == 0)
 		return (0);
 	int z = 3;
+
 	for (; z * z <= n; z += 2)
 		if (n % z == 0)
 			return (0);
