@@ -8,16 +8,16 @@
  * Return: true for prime nums and false for other
 */
 
-bool isprime(long long int n)
+int isprime(long int n)
 {
 	if (n == 2)
-		return (true);
+		return (1);
 	else if (n == 1 || n % 2 == 0)
-		return (false);
+		return (0);
 	for (int i = 3; i * i <= n; i += 2)
 		if (n % i == 0)
-			return (false);
-	return (true);
+			return (0);
+	return (1);
 }
 
 /**
@@ -29,7 +29,7 @@ bool isprime(long long int n)
 */
 int main(void)
 {
-	long long int i = 612852475143, ans = 0;
+	long int i = 612852475143, ans = 0;
 
 	for (; i > 2 ; i -= 2)
 	{
