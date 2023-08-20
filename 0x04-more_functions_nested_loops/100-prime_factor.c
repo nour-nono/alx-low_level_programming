@@ -10,7 +10,7 @@
 */
 int main(void)
 {
-	long int i =sqrt(612852475143), ans = 0;
+	long int i = sqrt(612852475143), ans = 0;
 
 	if (i % 2 == 0)
 		++i;
