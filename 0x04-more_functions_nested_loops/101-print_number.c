@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_numbers - Entry point
+ * print_number - Entry point
  *
  * @n: input
  *
@@ -9,7 +9,7 @@
  *
  * Return: Always 0 (Success)
 */
-void print_numbers(int n)
+void print_number(int n)
 {
 	unsigned int num;
 
