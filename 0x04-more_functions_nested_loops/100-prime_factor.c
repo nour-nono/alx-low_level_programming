@@ -14,9 +14,9 @@ int isprime(long int n)
 		return (1);
 	else if (n == 1 || n % 2 == 0)
 		return (0);
-	int i = 3;
-	for (; i * i <= n; i += 2)
-		if (n % i == 0)
+	int z = 3;
+	for (; z * z <= n; z += 2)
+		if (n % z == 0)
 			return (0);
 	return (1);
 }
@@ -40,6 +40,6 @@ int main(void)
 			break;
 		}
 	}
-	printf("%d\n", ans);
+	printf("%ld\n", ans);
 	return (0);
 }
