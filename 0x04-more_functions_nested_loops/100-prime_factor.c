@@ -8,7 +8,7 @@
  * Return: true for prime nums and false for other
 */
 
-bool isprime(int n)
+bool isprime(long long int n)
 {
 	if (n == 2)
 		return (true);
@@ -29,15 +29,16 @@ bool isprime(int n)
 */
 int main(void)
 {
-	int i = 782847;
+	long long int i = 612852475143, ans = 0;
 
-	for (; i > 1 ; i -= 2)
+	for (; i > 2 ; i -= 2)
 	{
 		if (isprime(i))
 		{
-			printf("%d\n", i);
+			ans = i;
 			break;
 		}
 	}
+	printf("%d\n", ans);
 	return (0);
 }
