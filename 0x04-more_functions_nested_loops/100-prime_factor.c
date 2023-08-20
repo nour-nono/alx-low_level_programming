@@ -35,7 +35,7 @@ int main(void)
 	{
 		if (isprime(i))
 		{
-			printf("%d", i);
+			printf("%d\n", i);
 			break;
 		}
 	}
