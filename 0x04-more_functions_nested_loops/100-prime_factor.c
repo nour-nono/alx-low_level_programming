@@ -1,26 +1,5 @@
 #include <stdio.h>
-
-/**
- * isprime - for prime nums
- *
- * @n: num
- *
- * Return: true for prime nums and false for other
-*/
-
-int isprime(long int n)
-{
-	int z = 3;
-
-	if (n == 2)
-		return (1);
-	else if (n == 1 || n % 2 == 0)
-		return (0);
-	for (; z * z <= n; z += 2)
-		if (n % z == 0)
-			return (0);
-	return (1);
-}
+#include <math.h>
 
 /**
  * main - Entry point
@@ -31,11 +10,13 @@ int isprime(long int n)
 */
 int main(void)
 {
-	long int i = 612852475143, ans = 0;
+	long int i =sqrt(612852475143), ans = 0;
 
-	for (; i > 2 ; i -= 2)
+	if (i % 2 == 0)
+		++i;
+	for (; i > 2 ; i += 2)
 	{
-		if (isprime(i))
+		if (612852475143 % i == 0)
 		{
 			ans = i;
 			break;
