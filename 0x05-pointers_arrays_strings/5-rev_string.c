@@ -18,7 +18,6 @@ void rev_string(char *s)
 
 	const int y = i;
 	char tmp[y];
-	char tmp[i + 1];
 
 	i = 0;
 	while (s[i] != '\0')
