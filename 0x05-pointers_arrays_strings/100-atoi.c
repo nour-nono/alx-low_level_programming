@@ -27,7 +27,7 @@ int _atoi(char *s)
 	{
 		num += s[i] - '0';
 		flag = 0;
-		if (num < (INT_MAX  / 10 + 1))
+		if (num < (INT_MAX  / 10 + 2))
 		{
 			num *= 10;
 			flag = 1;
