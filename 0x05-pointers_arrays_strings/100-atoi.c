@@ -37,8 +37,8 @@ int _atoi(char *s)
 	if (flag)
 		num /= 10;
 	if (cnt % 2)
-		return (num);
-	else
 		return (-num);
+	else
+		return (num);
 }
 
