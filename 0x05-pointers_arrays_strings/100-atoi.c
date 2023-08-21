@@ -1,4 +1,5 @@
 #include "main.h"
+#include <limits.h>
 
 /**
  * _atoi - Entry point
@@ -24,7 +25,7 @@ int _atoi(char *s)
 	while (s[i] != '\0' && s[i] <= '9' && s[i] >= '0')
 	{
 		num += s[i] - '0';
-		if (num < (INT_MAX / 10))
+		if (num < ((INT_MAX + 1) / 10))
 		num *= 10;
 		++i;
 	}
