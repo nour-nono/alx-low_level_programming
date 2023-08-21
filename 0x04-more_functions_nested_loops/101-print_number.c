@@ -47,5 +47,4 @@ void print_number(int n)
 			i /= 10;
 	}
 	_putchar('0' + num % 10);
-	_putchar('\n');
 }
