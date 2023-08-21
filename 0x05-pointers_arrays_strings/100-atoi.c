@@ -13,7 +13,7 @@
 int _atoi(char *s)
 {
 	int i = 0;
-	int num = 0;
+	unsigned int num = 0;
 	int cnt = 0;
 	int flag = 0;
 
@@ -37,7 +37,8 @@ int _atoi(char *s)
 	if (flag)
 		num /= 10;
 	if (cnt % 2)
-		num *= -1;
-	return (num);
+		return (num);
+	else
+		return (-num);
 }
 
