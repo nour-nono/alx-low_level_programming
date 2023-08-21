@@ -12,18 +12,22 @@
 void rev_string(char *s)
 {
 	int i = 0;
+	int y = 0;
+	int x = 0;
+	char tmp;
 
 	while (s[i] != '\0')
 		++i;
-
-	const int y = i;
-	char tmp[y];
-
-	i = 0;
-	while (s[i] != '\0')
+	--i;
+	y = i / 2;
+	while (y)
 	{
-		tmp[i] = s[i];
-		++i;
+		tmp = s[i];
+		s[i] = s[x];
+		s[x] = tmp;
+		--i;
+		++x;
+		--y;
 	}
 	while (i--)
 		s[y - 1 - i] = tmp[i];
