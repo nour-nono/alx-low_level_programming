@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _puts - Entry point
+ * puts2 - Entry point
  *
  * @str: is a pointer
  *
@@ -9,7 +9,7 @@
  *
  * Return: Always 0 (Success)
  */
-void _puts(char *str)
+void puts2(char *str)
 {
 	int i = 0;
 
