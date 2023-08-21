@@ -30,7 +30,7 @@ int _atoi(char *s)
 		if (num < (INT_MAX  / 10 + 1))
 		{
 			num *= 10;
-			flag = 1
+			flag = 1;
 		}
 		++i;
 	}
