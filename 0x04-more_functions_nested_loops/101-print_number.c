@@ -22,7 +22,7 @@ void print_number(int n)
 	}
 	else
 		num = n;
-	if (num >= 1e9)
+	if (num >= 1000000000)
 	{
 		int x = num % 10000000000;
 
