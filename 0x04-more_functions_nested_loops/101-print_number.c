@@ -24,7 +24,7 @@ void print_number(int n)
 		num = n;
 	if (num >= 1000000000)
 	{
-		int x = num % 10000000000;
+		unsigned int x = num % 10000000000;
 
 		x /= 1000000000;
 		num %= 1000000000;
