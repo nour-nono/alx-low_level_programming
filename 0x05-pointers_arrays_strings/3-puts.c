@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strlen - Entry point
+ * _puts - Entry point
  *
  * @str: is a pointer
  *
@@ -9,7 +9,7 @@
  *
  * Return: Always 0 (Success)
  */
-void _strlen(char *str)
+void _puts(char *str)
 {
 	int i = 0;
 
@@ -17,6 +17,6 @@ void _strlen(char *str)
 	{
 		putchar(str[i]);
 	}
-	puthchar('\n');
+	putchar('\n');
 }
 
