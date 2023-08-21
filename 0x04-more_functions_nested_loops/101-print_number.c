@@ -11,7 +11,7 @@
 */
 void print_number(int n)
 {
-	unsigned int num;
+	unsigned int num, int flag = 0, unsigned int i = 1000000000;
 
 	if (n < 0)
 	{
@@ -28,9 +28,8 @@ void print_number(int n)
 		num %= 1000000000;
 		putchar('0' + x);
 	}
-	int flag = 0;
 
-	for (unsigned int i = 1000000000; i > 10;)
+	for (; i > 10;)
 	{
 		if (num * 10 >= i || flag)
 		{
