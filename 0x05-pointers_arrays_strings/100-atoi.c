@@ -25,7 +25,7 @@ int _atoi(char *s)
 	while (s[i] != '\0' && s[i] <= '9' && s[i] >= '0')
 	{
 		num += s[i] - '0';
-		if (num < ((INT_MAX + 1) / 10))
+		if (num < (INT_MAX  / 10 + 1)
 		num *= 10;
 		++i;
 	}
