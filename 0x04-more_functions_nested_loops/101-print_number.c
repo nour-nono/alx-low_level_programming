@@ -17,8 +17,8 @@ void print_number(int n)
 
 	if (n < 0)
 	{
-		num *= -1;
-		putchar('-');
+		num = -1 * n;
+		_putchar('-');
 	}
 	else
 		num = n;
@@ -28,7 +28,7 @@ void print_number(int n)
 
 		x /= 1000000000;
 		num %= 1000000000;
-		putchar('0' + x);
+		_putchar('0' + x);
 	}
 
 	while (i > 10)
@@ -40,12 +40,12 @@ void print_number(int n)
 			i /= 10;
 			z /= i;
 			num %= i;
-			putchar('0' + z);
+			_putchar('0' + z);
 			flag = 1;
 		}
 		else
 			i /= 10;
 	}
-	putchar('0' + num % 10);
+	_putchar('0' + num % 10);
 	_putchar('\n');
 }
