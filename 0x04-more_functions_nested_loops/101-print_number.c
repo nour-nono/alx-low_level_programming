@@ -11,11 +11,13 @@
 */
 void print_number(int n)
 {
-	unsigned int num = 0, unsigned int i = 1000000000, int flag = 0;
+	unsigned int num = 0;
+	unsigned int i = 1000000000;
+	int flag = 0;
 
 	if (n < 0)
 	{
-		num = -1 * n;
+		num *= -1;
 		putchar('-');
 	}
 	else
