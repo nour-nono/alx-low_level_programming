@@ -29,7 +29,4 @@ void rev_string(char *s)
 		++x;
 		--y;
 	}
-	while (i--)
-		s[y - 1 - i] = tmp[i];
 }
-
