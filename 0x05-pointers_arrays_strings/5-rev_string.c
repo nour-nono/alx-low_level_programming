@@ -18,8 +18,8 @@ void rev_string(char *s)
 
 	while (s[i] != '\0')
 		++i;
-	--i;
 	y = i / 2;
+	--i;
 	while (y)
 	{
 		tmp = s[i];
