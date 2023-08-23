@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strcpy - Entry point
+ * _strcat - Entry point
  *
  * @dest: is a pointer to arr of int
  *
@@ -11,7 +11,7 @@
  *
  * Return: Always 0 (Success)
  */
-char *_strcpy(char *dest, char *src)
+char *_strcat(char *dest, char *src)
 {
 	int i = 0;
 	int j = 0;
