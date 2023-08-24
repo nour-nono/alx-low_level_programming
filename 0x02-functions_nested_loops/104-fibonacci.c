@@ -12,14 +12,13 @@ int main(void)
 	long int a1 = 1, b1 = 2, a2 = 0, b2 = 0;
 	long int a3 = 0, b3 = 0, j = 0;
 
+	printf("%ld, %ld, ", a1, b1);
 	for (; j < 97; ++j)
 	{
-		int tmp1 = b1;
-		int tmp2 = b2;
-		int tmp3 = b3;
+		long int tmp1 = b1, tmp2 = b2, tmp3 = b3;
 
-		a1 = tmp1;
 		b1 += a1;
+		a1 = tmp1;
 		b2 += a2;
 		a2 = tmp2;
 		b3 += a3;
