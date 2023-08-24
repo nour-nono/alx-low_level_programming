@@ -39,7 +39,7 @@ int main(void)
 	long int a3 = 0, b3 = 0, j = 0;
 
 	printf("%ld, %ld, ", a1, b1);
-	for (; j < 97; ++j)
+	for (; j < 95; ++j)
 	{
 		long int tmp1 = b1, tmp2 = b2, tmp3 = b3, zeros = 0;
 
@@ -53,7 +53,7 @@ int main(void)
 			b3 += b2 / 1000000000, b2 %= 1000000000;
 		if (b3)
 		{
-			if (j < 96)
+			if (j < 94)
 			{
 				printf("%ld%ld", b3, b2);
 				for (; zeros ; --zeros)
