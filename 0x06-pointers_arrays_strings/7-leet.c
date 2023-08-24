@@ -13,6 +13,8 @@ char *leet(char *c)
 {
 	int i = 0;
 	int j = 0;
+	char lett[] = "AEOTL";
+	char code[] = "43017";
 
 	while (c[i] != '\0')
 	{
