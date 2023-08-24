@@ -53,7 +53,7 @@ int main(void)
 			b3 += b2 / 1000000000, b2 %= 1000000000;
 		if (b3)
 		{
-			if (j < 94)
+			if (j < 93)
 			{
 				printf("%ld%ld", b3, b2);
 				for (; zeros ; --zeros)
