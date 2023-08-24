@@ -45,5 +45,6 @@ int main(void)
 		else
 			printf("%ld, ", b1);
 	}
+	printf("\n");
 	return (0);
 }
