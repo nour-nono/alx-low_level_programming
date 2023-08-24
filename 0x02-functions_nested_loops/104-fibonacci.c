@@ -43,8 +43,7 @@ int main(void)
 	{
 		long int tmp1 = b1, tmp2 = b2, tmp3 = b3, zeros = 0;
 
-		b1 += a1, a1 = tmp1;
-		b2 += a2, a2 = tmp2, b3 += a3, a3 = tmp3;
+		b1 += a1, a1 = tmp1, b2 += a2, a2 = tmp2, b3 += a3, a3 = tmp3;
 		if (b1 >= 1e9)
 		{
 			zeros = z(b1);
