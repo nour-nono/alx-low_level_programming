@@ -57,7 +57,7 @@ int main(void)
 			{
 				printf("%ld%ld", b3, b2);
 				for (; zeros ; --zeros)
-					printf("0");
+					printf("%ld", 0);
 				printf("%ld, ", b1);
 			}
 			else
@@ -67,7 +67,7 @@ int main(void)
 		{
 			printf("%ld", b2);
 			for (; zeros ; --zeros)
-				printf("0");
+				printf("%ld", 0);
 			printf("%ld, ", b1);
 		}
 		else
