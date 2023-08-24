@@ -44,7 +44,7 @@ int main(void)
 		else if (b2)
 			printf("%ld%ld, ", b2, b1);
 		else
-			printf("%d, ", b1);
+			printf("%ld, ", b1);
 	}
 	return (0);
 }
