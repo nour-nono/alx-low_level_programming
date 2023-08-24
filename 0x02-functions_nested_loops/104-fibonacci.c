@@ -36,7 +36,7 @@ int z(int b1)
 int main(void)
 {
 	long int a1 = 1, b1 = 2, a2 = 0, b2 = 0;
-	long int a3 = 0, b3 = 0, j = 0, i = 0;
+	long int a3 = 0, b3 = 0, j = 0;
 
 	printf("%ld, %ld, ", a1, b1);
 	for (; j < 97; ++j)
