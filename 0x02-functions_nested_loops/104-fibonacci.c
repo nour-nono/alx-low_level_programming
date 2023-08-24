@@ -55,7 +55,12 @@ int main(void)
 		if (b3)
 		{
 			if (j < 96)
-				printf("%ld%ld%ld, ", b3, b2, b1);
+			{
+				printf("%ld%ld", b3, b2);
+				for (; zeros ; --zeros)
+					printf("0");
+				printf("%ld, ", b1);
+			}
 			else
 				printf("%ld%ld%ld", b3, b2, b1);
 		}
