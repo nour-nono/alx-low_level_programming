@@ -40,6 +40,8 @@ int main(void)
 			else
 				printf("%ld%ld%ld", b3, b2, b1);
 		}
+		else if (j == 56)
+			printf("%ld00%ld, ", b2, b1);
 		else if (b2)
 			printf("%ld%ld, ", b2, b1);
 		else
