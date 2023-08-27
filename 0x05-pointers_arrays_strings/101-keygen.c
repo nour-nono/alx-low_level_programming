@@ -10,13 +10,15 @@
 
 int main(void)
 {
-	int sum;
+	int sum = 0;
 	char ch;
 
 	srand(time(NULL));
 	while (sum <= 2645)
 	{
 		ch = rand() % 128;
+		if (ch < 44)
+			ch = 128 - ch;
 		sum += ch;
 		putchar(ch);
 	}
