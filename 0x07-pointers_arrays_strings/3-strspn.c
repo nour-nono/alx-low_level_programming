@@ -1,19 +1,35 @@
 #include "main.h"
-
 /**
- * _strchr - Find first occurrence of a specific character
+ * _strspn - Find first occurrence of a specific character
  *
  * @s: string
- * @c: the char that we looking for
+ * @accept: the string that we looking for
  *
  * Return: the pos of the character.
 */
-
-char *_strchr(char *s, char c)
+unsigned int _strspn(char *s, char *accept)
 {
-	int i = 0;
+	unsigned int i = 0, j = 0, ans = 0;
 
-	while (s[i] != c && s[i] != '\0') 
+	while (s[i] != '\0')
+	{
+		j = 0;
+		while (accept[j] != '\0' && accept[j] != s[i])
+			++j;
+		if (accept[j] == s[i])
+			break;
 		++i;
-	return (s + i);
+	}
+	while (s[i] != '\0')
+	{
+		j = 0;
+		while (accept[j] != '\0' && accept[j] != s[i])
+			++j;
+		if (accept[j] == s[i])
+			++ans;
+		else
+			break;
+		++i;
+	}
+	return (ans);
 }
