@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * _memset - filling array or string
+ * _memcpy - filling array or string
  * @dest: string
  * @src: repeated char
  * @n: num of bytes
