@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * _strstr - Find first occurrence of a specific character
  *
@@ -7,9 +8,10 @@
  *
  * Return: the pos of the character.
 */
+
 char *_strstr(char *haystack, char *needle)
 {
-	unsigned int i = 0, j;
+	int i = 0, j;
 
 	while (haystack[i] != '\0')
 	{
