@@ -8,11 +8,14 @@
 int ppr(int n, int i)
 {
 	if (i * i <= n)
+	{
 		if (n % i == 0)
 			return (0);
 		else
 			return (ppr(n, i + 2));
-	return (1);
+	}
+	else
+		return (1);
 }
 /**
  * is_prime_number - check the code
