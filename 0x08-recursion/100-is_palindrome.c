@@ -10,8 +10,8 @@ int len(char *s)
 
 	if (*s != '\0')
 		sum = len(s + 1) + 1;
-	else
-		return (sum);
+
+	return (sum);
 }
 
 /**
