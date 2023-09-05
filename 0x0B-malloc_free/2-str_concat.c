@@ -12,21 +12,30 @@ char *str_concat(char *s1, char *s2)
 	unsigned int i = 0, j = 0;
 	char *ch;
 
-	while (s1[i] != '\0')
+	while (s1 != NULL && s1[i] != '\0')
 		++i;
-
-	while (s2[j] != '\0')
+	while (s2 != NULL && s2[j] != '\0')
 		++j;
+	if (s1 != NULL)
+		++i;
+	if (s2 != NULL)
+		++j;
+	if (i + j == 0)
+	{
+		ch = (char *)malloc(sizeof(char));
+		*ch = '\0';
+	}
+	else
+		ch = (char *) malloc((i + j + 2) * sizeof(char));
 	i = 0, j = 0;
-	ch = (char *) malloc((i + j + 2) * sizeof(char));
 	if (ch == NULL)
 		return (NULL);
-	while (s1[i] != '\0')
+	while (s1 != NULL && s1[i] != '\0')
 	{
 		ch[i] = s1[i];
 		++i;
 	}
-	while (s2[j] != '\0')
+	while (s2 != NULL && s2[j] != '\0')
 	{
 		ch[i] = s2[j];
 		++i, ++j;
