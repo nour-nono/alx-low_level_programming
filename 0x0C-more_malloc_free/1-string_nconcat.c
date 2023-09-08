@@ -12,23 +12,27 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int i = 0, j = 0;
 	char *str;
 
-	if (s1 != NULL)
+	if (s1 == NULL)
+		s1 = "";
+	else
 	{
 		for (j = 0; s1[j] != '\0'; ++j)
 		{
 			/* code */
 		}
 	}
-	if (s2 != NULL)
+	if (s2 == NULL)
+		s2 = "";
+	else
 	{
 		for (i = 0; s2[i] != '\0'; ++i)
 		{
 			/* code */
 		}
 	}
-	if (n >= i)
 	str = malloc(j + n + 1);
-	n = i;
+	if (n >= i)
+		n = i;
 	if (str == NULL)
 		return (NULL);
 	if (s1 != NULL)
