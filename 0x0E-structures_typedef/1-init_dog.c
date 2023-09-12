@@ -2,7 +2,6 @@
 
 /**
  * init_dog - just a function
- * 
  * @d: struct
  * @name: the dog name
  * @age: the dog age
