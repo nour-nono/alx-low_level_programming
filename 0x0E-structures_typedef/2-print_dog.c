@@ -1,5 +1,6 @@
-#include "dog.h"
 #include <stdio.h>
+#include "dog.h"
+
 /**
  * print_dog - just a function
  *
@@ -15,7 +16,7 @@ void print_dog(struct dog *d)
 			printf("Name: %s\n", d->name);
 		else
 			printf("Name: (nil)\n");
-		if (d->age != NULL)
+		if (d->age)
 			printf("Age: %f\n", d->age);
 		else
 			printf("Age: (nil)\n");
