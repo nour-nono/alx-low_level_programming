@@ -1,7 +1,7 @@
 #include "dog.h"
 /**
-* print_dog - just a function
-* @d: struct
+ * print_dog - just a function
+ * @d: struct
 */
 void print_dog(struct dog *d)
 {

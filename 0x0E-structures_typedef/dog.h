@@ -6,7 +6,7 @@
  * @name: string
  * @age: float
  * @owner: string
- */
+*/
 struct dog
 {
 	char *name;
