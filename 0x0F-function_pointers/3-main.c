@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "calc.h"
+#include "3-calc.h"
 /**
  * main - check the code
  * @argc: arg count
@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 		puts("Error");
 		exit(99);
 	}
-	if ((argv[2] == "/" || argv[2] == "%") && argv[3] == 0)
+	if ((argv[2][0] == '/' || argv[2][0] == '%') && argv[3] == 0)
 	{
 		puts("Error");
 		exit(100);
