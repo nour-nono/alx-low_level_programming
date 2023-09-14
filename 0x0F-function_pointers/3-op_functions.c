@@ -19,7 +19,7 @@ int op_add(int a, int b)
  */
 int op_sub(int a, int b)
 {
-	return ((a > b) ? a - b : b - a);
+	return (a - b);
 }
 /**
  * op_mul - add a to b
