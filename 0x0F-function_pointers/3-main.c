@@ -10,14 +10,16 @@
 
 int main(int argc, char *argv[])
 {
+	int (*do_job)(int, int), a, b;
+
 	if (argc != 4)
 	{
 		puts("Error");
 		exit(98);
 	}
 
-	int (*do_job)(int, int) = get_op_func(argv[2]);
-	int a = atoi(argv[1]), b = atoi(argv[3]);
+	do_job = get_op_func(argv[2]);
+	a = atoi(argv[1]), b = atoi(argv[3]);
 
 	if (do_job == NULL)
 	{
