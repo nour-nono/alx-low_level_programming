@@ -11,7 +11,7 @@
 int main(int argc, char *argv[])
 {
 	int (*do_job)(int, int) = get_op_func(argv[2]);
-	int a = atoi(argv[1]), b = atoi(argv[3])
+	int a = atoi(argv[1]), b = atoi(argv[3]);
 
 	if (argc != 4)
 	{
