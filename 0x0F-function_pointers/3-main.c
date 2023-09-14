@@ -10,12 +10,15 @@
 
 int main(int argc, char *argv[])
 {
+	int (*do_job)(int, int) = get_op_func(argv[2]);
+	int a = atoi(argv[1]), b = atoi(argv[3])
+
 	if (argc != 4)
 	{
 		puts("Error");
 		exit(98);
 	}
-	if (get_op_func(argv[2]) == NULL)
+	if (do_job == NULL)
 	{
 		puts("Error");
 		exit(99);
@@ -25,6 +28,6 @@ int main(int argc, char *argv[])
 		puts("Error");
 		exit(100);
 	}
-	printf("%d\n", get_op_func(argv[2])(atoi(argv[1]), atoi(argv[3])));
+	printf("%d\n", do_job(a, b));
 	return (0);
 }
