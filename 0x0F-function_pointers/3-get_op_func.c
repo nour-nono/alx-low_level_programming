@@ -19,7 +19,7 @@ op_t ops[] = {
 	i = 0;
 	while (i < 5)
 	{
-		if (s != NULL && !s[1] && s[0] == *ops[i].op)
+		if (s != NULL && s[1] == '\0' && s[0] == *ops[i].op)
 			return (ops[i].f);
 		++i;
 	}

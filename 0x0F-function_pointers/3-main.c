@@ -1,10 +1,10 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "3-calc.h"
 /**
  * main - check the code
+ *
  * @argc: arg count
  * @argv: arg vector
+ *
  * Return: Always 0.
 */
 
