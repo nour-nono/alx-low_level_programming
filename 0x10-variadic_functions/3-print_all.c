@@ -67,10 +67,10 @@ void print_all(const char *const format, ...)
 				if (flag)
 					printf(", ");
 				ops[j].ptrfunc(inpt);
+				++flag;
 			}
 			++j;
 		}
-		++flag;
 		++i;
 	}
 	puts("");
