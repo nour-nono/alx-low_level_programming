@@ -18,10 +18,10 @@ void do_string(va_list inpt)
 	switch ((int)!s)
 	{
 		case 1:
-		printf("%s", s);
-		return;
+			printf("(nil)");
+			return;
 	}
-	printf("(nil)");
+		printf("%s", s);
 }
 /**
  * do_integer - check the code
