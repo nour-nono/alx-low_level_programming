@@ -19,9 +19,12 @@ void do_string(va_list inpt)
 	{
 		case 1:
 			printf("(nil)");
-			return;
 	}
-		printf("%s", s);
+	switch ((int)s)
+	{
+		case 1:
+			printf("%s", s);
+	}
 }
 /**
  * do_integer - check the code
