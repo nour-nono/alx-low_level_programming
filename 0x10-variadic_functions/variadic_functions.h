@@ -14,7 +14,7 @@ typedef struct test test;
 struct test
 {
 	char c;
-	void (*ptrfunc) (char a, va_list);
+	void (*ptrfunc) (va_list);
 };
 
 int sum_them_all(const unsigned int n, ...);
