@@ -4,7 +4,18 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdarg.h>
-
+/**
+ * struct format - just struct
+ *
+ * @c:
+ * @ptrfunc:
+*/
+typedef struct test test;
+struct test
+{
+	char c;
+	void (*ptrfunc) (char a, va_list);
+};
 
 int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
