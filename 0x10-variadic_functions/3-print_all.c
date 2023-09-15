@@ -5,7 +5,7 @@
  */
 void do_char(va_list inpt)
 {
-	printf("%c", (char) va_arg(inpt, int));
+	printf("%c", va_arg(inpt, int));
 }
 /**
  * do_string - check the code
@@ -28,7 +28,7 @@ void do_string(va_list inpt)
  */
 void do_integer(va_list inpt)
 {
-	printf("%d", (int) va_arg(inpt, int));
+	printf("%d", va_arg(inpt, int));
 }
 /**
  * do_flt - check the code
@@ -36,7 +36,7 @@ void do_integer(va_list inpt)
  */
 void do_flt(va_list inpt)
 {
-	printf("%f", (float)va_arg(inpt, double));
+	printf("%f", va_arg(inpt, double));
 }
 /**
  * print_all - check the code
