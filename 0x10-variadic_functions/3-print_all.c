@@ -28,7 +28,7 @@ void do_string(va_list inpt)
  */
 void do_integer(va_list inpt)
 {
-	printf("%d", va_arg(inpt, int));
+	printf("%i", va_arg(inpt, int));
 }
 /**
  * do_flt - check the code
