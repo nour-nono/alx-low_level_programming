@@ -19,6 +19,7 @@ void do_string(va_list inpt)
 	{
 		case 1:
 			printf("(nil)");
+			return;
 	}
 			printf("%s", s);
 }
