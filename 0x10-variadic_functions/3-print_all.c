@@ -18,8 +18,7 @@ void do_string(va_list inpt)
 	switch ((int)!s)
 	{
 		case 1:
-			printf("(nil)");
-			return;
+			s = "(nil)";
 	}
 			printf("%s", s);
 }
