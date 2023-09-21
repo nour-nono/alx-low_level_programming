@@ -1,3 +1,4 @@
+#include "lists.h"
 /**
  * print_list - check the code
  * @h: struct
