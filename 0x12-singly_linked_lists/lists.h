@@ -19,23 +19,6 @@ typedef struct list_s
 	unsigned int len;
 	struct list_s *next;
 } list_t;
-/**
- *  _strlen - Entry point
- *
- * @s: is a pointer
- *
- * Description: this program prints "_putchar"
- *
- * Return: Always 0 (Success)
- */
-int _strlen(const char *s)
-{
-	int i = 0;
-
-	while (s[i] != '\0')
-		++i;
-	return (i);
-}
 size_t print_list(const list_t *h);
 size_t list_len(const list_t *h);
 list_t *add_node(list_t **head, const char *str);
