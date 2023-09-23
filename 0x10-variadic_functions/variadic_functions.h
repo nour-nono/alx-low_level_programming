@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include <stdarg.h>
 /**
- * struct format - just struct
+ * struct test - just struct
  *
  * @c:
  * @ptrfunc:
