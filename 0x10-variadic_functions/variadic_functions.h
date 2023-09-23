@@ -7,8 +7,8 @@
 /**
  * struct test - just struct
  *
- * @c:
- * @ptrfunc:
+ * @c: a char
+ * @ptrfunc: function
 */
 struct test
 {
