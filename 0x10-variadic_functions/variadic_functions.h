@@ -10,12 +10,12 @@
  * @c:
  * @ptrfunc:
 */
-typedef struct test test;
 struct test
 {
 	char *c;
 	void (*ptrfunc) (va_list);
 };
+typedef struct test test;
 
 int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
