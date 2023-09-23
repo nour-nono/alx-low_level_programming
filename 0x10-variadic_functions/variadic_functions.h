@@ -13,7 +13,7 @@
 struct test
 {
 	char *c;
-	void (*ptrfunc) (va_list);
+	void (*ptrfunc)(va_list);
 };
 typedef struct test test;
 
