@@ -4,15 +4,18 @@
  * @head: pointer to pointer
  * @n: int
  * Return: Always 0.
-*/
+ */
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
 	listint_t *new_node = malloc(sizeof(listint_t));
+	listint_t *x = *head;
 
 	if (!new_node)
 		return (NULL);
 	new_node->n = n;
 	new_node->next = NULL;
-	(*head)->next = new_node;
+	while (x->next)
+		x = x->next;
+	x->next = new_node;
 	return (new_node);
 }
