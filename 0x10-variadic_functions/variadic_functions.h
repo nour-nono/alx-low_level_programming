@@ -5,17 +5,17 @@
 #include <stdio.h>
 #include <stdarg.h>
 /**
- * struct format - just struct
+ * struct test - just struct
  *
- * @c:
- * @ptrfunc:
+ * @c: a char
+ * @ptrfunc: function
 */
-typedef struct test test;
 struct test
 {
 	char *c;
-	void (*ptrfunc) (va_list);
+	void (*ptrfunc)(va_list);
 };
+typedef struct test test;
 
 int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
