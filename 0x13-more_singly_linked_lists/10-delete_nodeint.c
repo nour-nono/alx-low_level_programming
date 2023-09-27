@@ -2,13 +2,14 @@
 /**
  * delete_nodeint_at_index - check the code
  * @head: pointer to pointer
- * @idx: pointer to pointer
+ * @index: pointer to pointer
  * Return: Always 0.
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
 	unsigned int cnt = 1;
 	listint_t *x, *y, *d;
+
 	if (!head)
 		return (-1);
 	x = *head;
