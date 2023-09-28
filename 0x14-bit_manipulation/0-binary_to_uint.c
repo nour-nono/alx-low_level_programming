@@ -6,8 +6,8 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	size_t x = strlen(b), i = 0;
-	unsigned int ans = 0;
+	int x = strlen(b);
+	unsigned int ans = 0, i = 0;
 
 	--x;
 	for (; x >= 0; --x, ++i)
