@@ -9,6 +9,8 @@ unsigned int binary_to_uint(const char *b)
 	int x = strlen(b);
 	unsigned int ans = 0, i = 0;
 
+	if (!b)
+		return (0);
 	--x;
 	for (; x >= 0; --x, ++i)
 	{
