@@ -7,7 +7,8 @@
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	int size = 0, i = 0;
+	int i = 0;
+	unsigned int size;
 
 	for (; i < 64; ++i)
 		if ((n >> i) & 1)
