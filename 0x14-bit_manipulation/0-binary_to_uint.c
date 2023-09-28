@@ -6,12 +6,12 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int x = strlen(b);
+	int x;
 	unsigned int ans = 0, i = 0;
 
-	if (!b)
+	if (b == NULL)
 		return (0);
-	--x;
+	x = strlen(b) - 1;
 	for (; x >= 0; --x, ++i)
 	{
 		if (b[x] == '1')
