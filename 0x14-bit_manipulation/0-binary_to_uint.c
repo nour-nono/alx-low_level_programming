@@ -1,14 +1,18 @@
 #include "main.h"
+
 /**
  * binary_to_uint - check the code
  * @b: pointer to pointer
  * Return: Always 0.
  */
+
 unsigned int binary_to_uint(const char *b)
 {
-	long int x = _strlen(b), i = 0;
-	unsigned int ans = 0;
+	unsigned int x, i = 0, ans = 0;
 
+	if (!b)
+		return (0);
+	x = _strlen(b);
 	--x;
 	for (; x >= 0; --x, ++i)
 	{
