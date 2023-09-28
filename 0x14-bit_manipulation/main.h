@@ -4,6 +4,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include<math.h>
 #include <limits.h>
 
 unsigned int binary_to_uint(const char *b);
