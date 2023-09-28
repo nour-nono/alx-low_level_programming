@@ -7,12 +7,13 @@
 void print_binary(unsigned long int n)
 {
 	int size, i;
+
 	if (!n)
 		putchar('0');
 	else
 	{
 		size = 0, i = 0;
-		for (; i < 32; ++i)
+		for (; i < 64; ++i)
 			if ((n >> i) & 1)
 				size = i;
 		for (; size >= 0; --size)
