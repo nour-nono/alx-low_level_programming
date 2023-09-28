@@ -6,7 +6,7 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	long int x = strlen(b), i = 0;
+	long int x = _strlen(b), i = 0;
 	unsigned int ans = 0;
 
 	--x;
