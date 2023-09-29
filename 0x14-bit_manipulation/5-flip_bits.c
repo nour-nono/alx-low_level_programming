@@ -10,7 +10,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	unsigned long int ans1 = (n ^ m);
 	int ans2 = 0, i = 0;
 
-	for (; i < 63; i++)
+	for (; i < 64; i++)
 		if ((ans1 >> i) & 1)
 			++ans2;
 	return (ans2);
