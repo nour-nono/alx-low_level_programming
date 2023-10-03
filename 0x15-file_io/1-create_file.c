@@ -14,10 +14,8 @@ int _strlen(char *s)
 	int i = 0;
 
 	while (s[i] != '\0')
-	{
 		++i;
-	}
-	return (i / sizeof(char));
+	return (i);
 }
 /**
  * create_file - Entry point
@@ -41,9 +39,7 @@ int create_file(const char *filename, char *text_content)
 	if (fl == -1)
 		return (-1);
 	if (length)
-	{
 		num = write(fl, text_content, length);
-	}
 	close(fl);
 	if (num == length)
 		return (1);
