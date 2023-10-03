@@ -9,7 +9,7 @@
  *
  * Return: Always 0.
  */
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
 	int from = 0, to = 0;
 	ssize_t num;
@@ -34,11 +34,11 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
-	close(from);
-	close(to);
+	from = close(from);
+	to = close(to);
 	if (from)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", from), exit(100);
 	if (to)
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", from), exit(100);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", to), exit(100);
 	return (EXIT_SUCCESS);
 }
