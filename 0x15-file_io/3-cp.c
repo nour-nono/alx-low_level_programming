@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 	while ((num = read(from, cont, 1024)) > 0)
 		if (write(to, cont, num) != num)
 			dprintf(STDERR_FILENO, "Error: Can't write to NAME_OF_THE_FILE"), exit (99);
-	if (num = -1)
+	if (num == -1)
 		dprintf(STDERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE"), exit (98);
 	close(from);
 	close(to);
