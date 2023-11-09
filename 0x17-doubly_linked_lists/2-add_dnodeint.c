@@ -2,7 +2,7 @@
 /**
  * add_dnodeint - check the code
  * @head: linked list head
- * @str: string
+ * @n: string
  * Return: Always int.
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
