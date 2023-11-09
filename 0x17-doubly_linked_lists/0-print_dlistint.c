@@ -1,4 +1,6 @@
 #include "lists.h"
+#include <stdlib.h>
+#include <stdio.h>
 /**
  * print_dlistint - check the code
  * @h: struct
