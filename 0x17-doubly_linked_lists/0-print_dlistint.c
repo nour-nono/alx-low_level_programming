@@ -1,6 +1,4 @@
 #include "lists.h"
-#include <stdlib.h>
-#include <stdio.h>
 /**
  * print_dlistint - check the code
  * @h: struct
@@ -15,8 +13,10 @@ size_t print_dlistint(const dlistint_t *h)
 		return (0);
 	while (i->next != NULL)
 	{
+		printf("%d\n", i->n);
 		i = i->next;
 		++cnt;
 	}
+	printf("%d\n", i->n);
 	return (cnt);
 }
