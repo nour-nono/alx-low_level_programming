@@ -29,7 +29,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			free(target);
 			return (0);
 		}
-		target->next = NULL;
+		target->next = ht->array[key_index((const unsigned char *) key, ht->size)];
 	}
 	else
 	{
