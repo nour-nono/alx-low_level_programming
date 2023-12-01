@@ -11,7 +11,7 @@
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	hash_node_t *new_node = NULL, *target = NULL;
+	hash_node_t *target = NULL;
 
 	if (!ht || !key)
 		return (0);
