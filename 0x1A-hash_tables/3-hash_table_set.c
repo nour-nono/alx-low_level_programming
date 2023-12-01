@@ -18,15 +18,17 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	target = ht->array[key_index((const unsigned char *) key, ht->size)];
 	while (target && strcmp(target->key, key) != 0)
 		target = target->next;
-	if (strcmp(target->key, key) != 0)
+	if (!target)
 	{
 		target = malloc(sizeof(hash_node_t));
 		if (!target)
 			return (0);
 		target->key = strdup(key), target->value = strdup(value);
-	
 		if (!target->key || !target->value)
+		{
+			free(target);
 			return (0);
+		}
 	}
 	else
 	{
