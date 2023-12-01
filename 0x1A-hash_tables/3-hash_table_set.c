@@ -29,11 +29,13 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			free(target);
 			return (0);
 		}
+		target->next = NULL;
 	}
 	else
 	{
 		free(target->value);
 		target->value = strdup(value);
 	}
+	ht->array[key_index((const unsigned char *) key, ht->size)] = target;
 	return (1);
 }
