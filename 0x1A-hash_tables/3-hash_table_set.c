@@ -4,7 +4,7 @@
  * hash_table_set - get the index of the key
  *
  * @key: key of the element
- * @size: size of the array
+ * @value: value of the element
  * @ht: the hashtable to be edited
  *
  * Return: 1 succeeded 0 failed
