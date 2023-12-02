@@ -21,6 +21,8 @@ void hash_table_delete(hash_table_t *ht)
 		while (todelete)
 		{
 			nx = todelete->next;
+			free(todelete->key);
+			free(todelete->value);
 			free(todelete);
 			todelete = NULL;
 			todelete = nx;
