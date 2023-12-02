@@ -26,6 +26,10 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		target->key = strdup(key), target->value = strdup(value);
 		if (!target->key || !target->value)
 		{
+			if (target->key)
+				free(target->key);
+			if (target->value)
+				free(target->value);
 			free(target);
 			return (0);
 		}
@@ -34,6 +38,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	else
 	{
 		free(target->value);
+		free(ht->array[key_index((const unsigned char *)key, ht->size)]->value);
 		target->value = strdup(value);
 	}
 	ht->array[key_index((const unsigned char *) key, ht->size)] = target;
