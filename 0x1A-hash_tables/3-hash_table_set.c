@@ -38,7 +38,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	else
 	{
 		free(target->value);
-		free(ht->array[key_index((const unsigned char *)key, ht->size)]->value);
 		target->value = strdup(value);
 	}
 	ht->array[key_index((const unsigned char *) key, ht->size)] = target;
