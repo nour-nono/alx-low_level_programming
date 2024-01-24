@@ -3,7 +3,7 @@ CC=gcc
 OBJ=$(patsubst %.c,%.o,$(SRC))
 NAME=school
 CFLAGS=-Wall -Werror -Wextra -pedantic
-.PHONY: all clean oclean fclean
+.PHONY: all clean oclean fclean re
 all: $(OBJ) m.h
 	$(CC) $(OBJ) -o $(NAME)
 clean:
