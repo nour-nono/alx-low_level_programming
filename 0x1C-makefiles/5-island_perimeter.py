@@ -38,13 +38,20 @@ def island_perimeter(gr):
     ans = 0
 
     # Iterate over each cell in the grid
-    for i in range(1, height - 1):
-        for j in range(1, width - 1):
+    for i in range(height):
+        for j in range(width):
             # If the cell is land
             if gr[i][j]:
                 # Add the number of water neighbors to the perimeter counter
-                tmp = gr[i + 1][j] + gr[i - 1][j]
-                tmp += gr[i][j - 1] + gr[i][j + 1]
+                tmp = 0
+                if i != 0:
+                    tmp = gr[i - 1][j]
+                if i != (height - 1):
+                    tmp += gr[i + 1][j]
+                if j != 0:
+                    tmp += gr[i][j - 1]
+                if j != (width - 1):
+                    tmp += gr[i][j + 1]
                 ans += 4 - tmp
 
     # Return the total perimeter
