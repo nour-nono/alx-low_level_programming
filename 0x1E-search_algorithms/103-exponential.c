@@ -10,7 +10,7 @@
  * @end: ending index
  * Return: the first index where value is located, or -1 on failure
  */
-int binary_search22(int *array, size_t size, int value, size_t start, size_t end)
+int binary_search2(int *array, size_t size, int value, size_t start, size_t end)
 {
 	size_t i;
 	int mid;
