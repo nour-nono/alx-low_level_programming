@@ -2,6 +2,8 @@
 #define SEARCH_ALGOS_H
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
+#include <stddef.h>
 int linear_search(int *array, size_t size, int value);
 int binary_search(int *array, size_t size, int value);
 int jump_search(int *array, size_t size, int value);
@@ -27,7 +29,6 @@ listint_t *jump_list(listint_t *list, size_t size, int value);
 listint_t *create_list(int *array, size_t size);
 void free_list(listint_t *list);
 void print_list(const listint_t *list);
-listint_t *linear_skip(listint_t *list, int value);
 
 /**
  * struct skiplist_s - Singly linked list with an express lane
