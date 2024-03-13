@@ -4,13 +4,12 @@
  * binary_search - searches for a value in a sorted array of integers using the
  * Binary search algorithm
  * @array: pointer to the first element of the array to search in
- * @size: number of elements in array
  * @value: value to search for
  * @start: starting index
  * @end: ending index
  * Return: the first index where value is located, or -1 on failure
  */
-int binary_search2(int *array, size_t size, int value, size_t start, size_t end)
+int binary_search2(int *array, int value, size_t start, size_t end)
 {
 	size_t i;
 	int mid;
@@ -60,5 +59,5 @@ int exponential_search(int *array, size_t size, int value)
 	}
 	bound = i < size - 1 ? i : size - 1;
 	printf("Value found between indexes [%lu] and [%lu]\n", i / 2, bound);
-	return (binary_search2(array, size, value, i / 2, bound));
+	return (binary_search2(array, value, i / 2, bound));
 }
