@@ -24,6 +24,9 @@ typedef struct listint_s
 	struct listint_s *next;
 } listint_t;
 listint_t *jump_list(listint_t *list, size_t size, int value);
+listint_t *create_list(int *array, size_t size);
+void free_list(listint_t *list);
+void print_list(const listint_t *list);
 listint_t *linear_skip(listint_t *list, int value);
 
 /**
@@ -43,6 +46,9 @@ typedef struct skiplist_s
     struct skiplist_s *next;
     struct skiplist_s *express;
 } skiplist_t;
+skiplist_t *create_skiplist(int *array, size_t size);
+void free_skiplist(skiplist_t *list);
+void print_skiplist(const skiplist_t *list);
 skiplist_t *linear_skip(skiplist_t *list, int value);
 
 #endif
